@@ -10,7 +10,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
   --navy:#1A2035;--gold:#C9A84C;--ivory:#F5F0E8;--terra:#C4572A;
-  --forest:#2A4A3E;--cream:#FAF7F2;--charcoal:#3A3530;--light-gold:#E8D5A3;
+  --forest:#2A4A3E;--cream:#FAF7F2;--charcoal:#2C2C2C;--light-gold:#E8D5A3;
   --text-light:#9A9690;
   --pad-x:72px;
   --pad-x-md:40px;
@@ -81,12 +81,12 @@ nav.scrolled{
 .hero-headline em{font-style:italic;color:var(--gold);font-weight:300;}
 .hero-sub{
   font-family:'Cormorant Garamond',serif;font-style:italic;
-  font-size:clamp(17px,1.8vw,23px);color:var(--text-light);
+  font-size:clamp(17px,1.8vw,23px);color:var(--charcoal);
   margin-bottom:22px;font-weight:300;line-height:1.6;
 }
 .hero-story-teaser{
-  font-family:'Jost',sans-serif;font-weight:200;font-size:13px;
-  letter-spacing:0.5px;color:var(--text-light);
+  font-family:'Jost',sans-serif;font-weight:300;font-size:13px;
+  letter-spacing:0.5px;color:var(--charcoal);
   margin-bottom:40px;line-height:1.8;max-width:340px;
   border-left:1px solid rgba(201,168,76,0.4);padding-left:16px;
 }
@@ -268,7 +268,7 @@ nav.scrolled{
 .variants-heading em{font-style:italic;color:var(--gold);}
 .variants-sub{
   font-family:'Cormorant Garamond',serif;font-style:italic;
-  font-size:17px;color:var(--text-light);margin-bottom:56px;line-height:1.6;
+  font-size:17px;color:var(--charcoal);margin-bottom:56px;line-height:1.6;
 }
 .variants-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .variant-card{
@@ -320,8 +320,8 @@ nav.scrolled{
   line-height:1.2;margin-bottom:14px;letter-spacing:-0.2px;
 }
 .waitlist-sub{
-  font-family:'Cormorant Garamond',serif;font-size:16px;
-  color:var(--text-light);margin-bottom:40px;font-style:italic;line-height:1.7;
+  font-family:'Cormorant Garamond',serif;font-size:17px;
+  color:var(--charcoal);margin-bottom:40px;font-style:italic;line-height:1.7;
 }
 .reservation-info{
   background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);
@@ -637,21 +637,21 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
   <div class="nav-links">
     <button class="nav-link" onclick="document.getElementById('varianten').scrollIntoView({behavior:'smooth'})">The Shirts</button>
     <button class="nav-link" onclick="document.getElementById('geschichte').scrollIntoView({behavior:'smooth'})">Our Story</button>
-    <button class="nav-cta" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Reserve Your Shirt</button>
+    <button class="nav-cta" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Private Access</button>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Munich &nbsp;·&nbsp; Oyo — Est. 2026</div>
+    <div class="hero-eyebrow">Now in Development &nbsp;·&nbsp; Munich &amp; Oyo</div>
     <h1 class="hero-headline">Signature<br>Shirts.</h1>
     <p class="hero-sub">For the man who belongs to two worlds.</p>
     <div class="hero-story-teaser">
       Founded in a moment of grief in Oyo, Nigeria — where the fabrics told the story of who was family.
       <a href="#" onclick="document.getElementById('geschichte').scrollIntoView({behavior:'smooth'});return false;">Read the story →</a>
     </div>
-    <button class="btn-primary" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Reserve Now</button>
+    <button class="btn-primary" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Request Private Access</button>
     <div class="hero-scroll">Scroll</div>
   </div>
   <div class="hero-right">
@@ -661,10 +661,9 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item">Handcrafted in Munich</div>
+  <div class="trust-item">Planned: Handcrafted in Munich</div>
   <div class="trust-item">Ankara handpicked</div>
-  <div class="trust-item">First Edition — 50 shirts only</div>
-  <div class="trust-item">Starting at € 169</div>
+  <div class="trust-item">First Edition · 50 shirts · Private List</div>
 </div>
 
 <!-- STORY -->
@@ -711,10 +710,14 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
       <div class="hw-eyebrow">The Craft</div>
       <h2 class="handwerk-heading">Precision. Meaning.<br><em>Both. Without compromise.</em></h2>
       <p class="handwerk-body">We use only the finest cotton fabrics. At the collar lining and cuffs: handpicked Ankara prints — worn in Nigeria for generations at the most important moments in life.</p>
+      <div style="margin:32px 0;padding:24px 28px;border-left:2px solid var(--gold);background:rgba(201,168,76,0.07);">
+        <p style="font-family:'Jost',sans-serif;font-weight:300;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--navy);margin-bottom:12px;">A Note on the Visuals</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--charcoal);line-height:1.85;font-style:italic;margin:0;">The shirts shown are design visualisations. The final Ankara fabrics are still being chosen — those on the private list will see them first.</p>
+      </div>
       <div class="handwerk-details">
         <div class="handwerk-detail">
           <span class="detail-label">Fabric</span>
-          <span class="detail-text">100% Cotton Poplin, 140s Two-Ply</span>
+          <span class="detail-text">100% Luxury Cotton</span>
         </div>
         <div class="handwerk-detail">
           <span class="detail-label">Accent</span>
@@ -729,7 +732,7 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
           <span class="detail-text">Mother-of-pearl buttons, reinforced seams, monogram embroidery</span>
         </div>
       </div>
-      <p class="handwerk-price">Starting at <strong>€ 169</strong> · Payment only at order confirmation</p>
+
     </div>
   </div>
 </section>
@@ -737,9 +740,9 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
 <!-- VARIANTEN -->
 <section class="variants-section" id="varianten">
   <div class="variants-inner">
-    <div class="variants-label">Choose Your Fabric</div>
+    <div class="variants-label">Fabric Concepts</div>
     <h2 class="variants-heading">Each shirt tells<br><em>a different story.</em></h2>
-    <p class="variants-sub">Every Ankara print is handpicked. No two editions are identical.</p>
+    <p class="variants-sub">These are early concepts — the final Ankara prints will be revealed exclusively to those on the private list.</p>
     <div class="variants-grid">
       <div class="variant-card selected">
         <div class="variant-shirt">
@@ -751,7 +754,7 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
         <div class="variant-info">
           <div class="variant-name">Oyo Gold</div>
           <div class="variant-desc">Warm orange · Black · Ochre</div>
-          <span class="variant-available">Available — First Edition</span>
+          <span class="variant-available">Concept — First Edition</span>
         </div>
       </div>
       <div class="variant-card">
@@ -764,55 +767,58 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
         <div class="variant-info">
           <div class="variant-name">Lagos Night</div>
           <div class="variant-desc">Deep purple · Gold · Midnight</div>
-          <span class="variant-available">Available — First Edition</span>
+          <span class="variant-available">Concept — First Edition</span>
         </div>
       </div>
       <div class="variant-card">
         <div class="variant-shirt" style="display:flex;align-items:center;justify-content:center;min-height:200px;">
           <div style="text-align:center;padding:32px 20px;">
             <div style="font-family:'Cormorant Garamond',serif;font-size:48px;color:rgba(26,32,53,0.12);margin-bottom:8px;">A</div>
-            <div style="font-family:'Jost',sans-serif;font-weight:200;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(154,150,144,0.5);">Coming soon</div>
+            <div style="font-family:'Jost',sans-serif;font-weight:200;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(154,150,144,0.5);">You help choose</div>
           </div>
         </div>
         <div class="variant-fabric-swatch" style="background:linear-gradient(135deg,#1D9E75,#4B1528,#EF9F27);display:flex;align-items:center;justify-content:center;">
           <span style="font-family:'Jost',sans-serif;font-weight:200;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,240,232,0.55);">Second edition</span>
         </div>
         <div class="variant-info">
-          <div class="variant-name">Indigo Swirl</div>
-          <div class="variant-desc">Teal · Burgundy · Amber</div>
-          <span class="variant-available variant-soon">Second Edition · Reserve now</span>
+          <div class="variant-name">Your Choice</div>
+          <div class="variant-desc">Private list reveals first</div>
+          <span class="variant-available variant-soon">Register to influence the design</span>
         </div>
       </div>
     </div>
-    <p class="variants-note">All Ankara fabrics are handpicked — each batch unique, never reproduced.</p>
+
   </div>
 </section>
 
 <!-- WAITLIST -->
 <section class="waitlist-section" id="waitlist">
   <div class="waitlist-inner">
-    <div class="wl-eyebrow">Early Access</div>
-    <h2 class="section-heading">The first AKINLOYE shirt<br>is being made.</h2>
-    <p class="waitlist-sub">50 shirts. First Edition. Your name can be on one of them.</p>
+    <div class="wl-eyebrow">First Edition</div>
+    <h2 class="section-heading">Limited to 50.<br>The first edition.</h2>
+    <p class="waitlist-sub">Those on the private list are the first to see the final fabrics — and the first to order.</p>
     <div class="reservation-info">
-      <div class="reservation-info-title">How reservation works</div>
+      <div class="reservation-info-title">Private List</div>
       <div class="reservation-steps">
         <div class="reservation-step">
           <div class="step-num">1</div>
-          <div class="step-text">Klick "Reserve" and this way let me know if you would like one of these shirts in your wardrobe.</div>
+          <div class="step-text">Request access — no payment, no obligation.</div>
         </div>
         <div class="reservation-step">
           <div class="step-num">2</div>
-          <div class="step-text">I'll get in touch with you then.</div>
+          <div class="step-text">Lisa reaches out personally. You see the final fabrics before anyone else.</div>
         </div>
-  
+        <div class="reservation-step">
+          <div class="step-num">3</div>
+          <div class="step-text">You order only when you're ready. No pressure, no deadline.</div>
+        </div>
       </div>
     </div>
-    <button class="btn-waitlist" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Reserve Now — Free</button>
+    <button class="btn-waitlist" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Request Private Access</button>
     <div class="wl-availability">
-      <span class="wl-avail-item">No spam</span>
-      <span class="wl-avail-item">Free cancellation</span>
-      <span class="wl-avail-item">50 shirts total</span>
+      <span class="wl-avail-item">No payment now</span>
+      <span class="wl-avail-item">No obligation</span>
+      <span class="wl-avail-item">50 shirts only</span>
     </div>
   </div>
 </section>
@@ -836,8 +842,8 @@ footer{background:var(--cream);padding:80px var(--pad-x) 0;border-top:1px solid 
     <div>
       <div class="footer-col-label">Contact</div>
       <a href="mailto:hello@akinloye.com" class="footer-contact-email">hello@akinloye.com</a>
-      <div class="footer-cta-label">Reserve your shirt</div>
-      <a href="#" class="footer-cta-link" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Reserve now →</a>
+      <div class="footer-cta-label">First Edition · Private List · 50 shirts only</div>
+      <a href="#" class="footer-cta-link" data-tally-open="xXRqpv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Request private access →</a>
     </div>
   </div>
   <div class="footer-bottom">
